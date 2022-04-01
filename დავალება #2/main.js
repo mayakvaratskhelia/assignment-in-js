@@ -47,24 +47,52 @@ console.log(2 === parseInt("002")) //ასეთ დროს არის true
 // 18 წელზე შესთავაზეთ სასმელი
 
 // >>> კოდი დაწერეთ აქ 
-
+let asaki = 18;
+let asaki_1 = Number(prompt(`შენი ასაკი`))
+if (asaki == asaki_1) {
+  console.log(`დავლიოთ?`)
+} else if (asaki_1 > asaki) {
+  console.log(`ასევე შეგვიძლია შემოგთვააზოთ ვისკი`)
+}
+else {
+  console.log(`არა შენთვის არ შეიძლება`)
+}
 
 //
 
 
 // მოიფიქრეთ 2 if else-ის მაგალითი თქვენით
+const xelfasi = 300
 
+if (xelfasi < 200) {
+  console.log(`საშუალოზე დაბალი შემოსავალი`);
+}
+else if (xelfasi >= 200 && xelfasi < 300) {
+  console.log(`საშუალოზე ოდნავ დაბალი შემოსავალი`);
+}
+else if (xelfasi >= 300 && xelfasi < 400) {
+  console.log(`საშუალო შემოსავალი`);
+}
+else {
+  console.log(`საშუალოზე მაღალი შემოსავალი`);
+}
 // >>> კოდი დაწერეთ აქ
-
+let weli = 18;
+if (weli >= 18) {
+  //>= მეტია ან უდრის
+  console.log('დაშვებლი ხარ პროგრამაში');
+} else {
+  console.log('ჯერ გახდი სრულწლოვანი ძმა');
+}
 //
 
 
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
-
+weli >= 18 ? console.log('დაშვებლი ხარ პროგრამაში') : console.log('ჯერ გახდი სრულწლოვანი ძმა');
 //
-
+// გამიჭირდასავით გადაყვანა თ რავი შემაშინა ერთმა ხაზმა :დ
 
 
 /*
@@ -84,7 +112,24 @@ let colorId = 3
 
 // >>> კოდი დაწერეთ აქ
 
-
+if (colorId == 3) {
+  console.log(`წითელი`);
+}
+else if (colorId == 2) {
+  console.log(`მწვანე`)
+}
+else if (colorId == 4) {
+  console.log(`თეთრი`)
+}
+else if (colorId == 0) {
+  console.log(`შავი`)
+}
+else if (colorId == 1) {
+  console.log(`თეთრი`)
+}
+else {
+  console.log(`undefined`)
+}
 //
 
 
@@ -92,6 +137,7 @@ let colorId = 3
 // გადაიყვანეთ If ternary operator-ში მაგ. (true ? 1 : 2) 
 
 // >>> კოდი დაწერეთ აქ
+colorId = 3 ? console.log(`წითელი`) : colorId == 2 ? console.log(`მწვანე`) : colorId == 4 ? console.log(`თეთრი`) : colorId == 0 ? console.log(`შავი`) : console.log(`undefined`);
 
 
 //
@@ -104,9 +150,22 @@ let colorId = 3
 
 
 // >>> კოდი დაწერეთ აქ
+switch (colorId) {
+  case colorId == 3:
+    console.log(`წითელი`)
+  case colorId == 2:
+    console.log(`მწვანე`)
+  case colorId == 4:
+    console.log(`ლურჯი`)
+  case colorId == 0:
+    console.log('შავი')
+  case colorId == 1:
+    console.log('თეთრი')
+  default:
+    console.log(`undefined`)
+}
 
-
-//
+// მგონი ვურევ 
 
 
 
@@ -142,10 +201,22 @@ function myFun() {
   let x = prompt("მე მზად არ ვარ პასუხისათვის")
 
   // >>> კოდი დაწერეთ აქ გამოიყენეთ Switch
-
-
-  //
+  switch (x) {
+    case `გამარჯობა`:
+      alert(`გომორჯგუა`);
+      break;
+    case `მეგრულად როგორ არის როგორ ხარ?`:
+      alert(`მუჭო რექ`);
+      break;
+    case `რას შვრები?`:
+      alert(`მუს ორთუქ`);
+      break;
+    case `მადლობა დახმარებითვის`:
+      alert(`არაფერს`);
+      break; 
+      
+  }
 
   // რეკურსიული ფუნქცია
-  myFun()
+  myFun();
 }
