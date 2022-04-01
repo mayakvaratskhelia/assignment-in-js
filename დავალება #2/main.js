@@ -23,8 +23,8 @@ const text2 = "0";
 
 // >>> კოდი დაწერეთ აქ 
 
-const isFalse = [];
-const isTrue = [];
+const isFalse = [boolean1, boolean2];
+const isTrue = [num2, num1, emptyString, text, text2];
 
 //
 
@@ -32,8 +32,12 @@ const isTrue = [];
 // შეცვალეთ ერთი ასო რომ მიიღოთ ჭეშმარიტი დებულება
 // მოკლედ ახსენით მუშაობის პრინციპი თუ რატომ იმოქმედა
 
-console.log("abc" > "ah")
-console.log(2 === "004")
+console.log("ahc" > "ah") 
+//ამის პრონციპი ცოტა ვერ გავიგე ,მაგრამ სულ იყო false სანამ b არ შევცვალე h 
+console.log(2 === "004")   //თუ შევცვლით ორით console.log(2 === parseInt("002")) გავაკეთებთ ასე ამ დროს შეიცვლება
+//პასუხი თუ არადა არ იმუშავებს და იქნება false  მგონი
+console.log(2 === parseInt("002")) //ასეთ დროს არის true
+
 
 
 
